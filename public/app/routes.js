@@ -12,7 +12,7 @@ angular.module("wcm-test_0.1.0")
 
 			$stateProvider
 
-				.state("pelorus.test.index", {
+				.state("pelorus.push-notifications.index", {
 					url: "",
 					access: {
 						requiresLogin: true
@@ -31,35 +31,7 @@ angular.module("wcm-test_0.1.0")
 							controller: "testOverviewController"
 						}
 					}
-				})
-
-			// .state("pelorus.test.edit", {
-			//     url: "/{uuid}",
-			//     access: {
-			//         requiresLogin: true
-			//     },
-			//     resolve: {
-			//         InstanceData: ["testFactory", "$stateParams", function(testFactory, $stateParams) {
-			//             if ($stateParams.uuid && $stateParams.uuid !== "new") {
-			//                 return testFactory.get({ id: $stateParams.uuid }).$promise;
-			//             } else {
-			//                 return {};
-			//             }
-			//         }]
-			//     },
-			//     ncyBreadcrumb: {
-			//         label: "{{breadcrumb}}"
-			//     },
-			//     views: {
-			//         "": {
-			//             templateUrl: "/app/core/resource/views/resource.html",
-			//             controller: "testDetailController"
-			//         },
-			//         "form@pelorus.test.edit": {
-			//             templateUrl: moduleFolder + "views/detail.html"
-			//         }
-			//     }
-			// });
+				});
 		}
 
 	]);
